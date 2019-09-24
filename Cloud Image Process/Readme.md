@@ -1,4 +1,14 @@
 # Cloud Image Process
+
+Build the image based on the Dockerfile
+```
+ docker build -t image-save .
+```
+### Run the container image-save on network hw3-network-tx2
+```
+docker run --privileged -ti --name image-save  --network hw3-network-tx2  -p 4000:1883  image-save
+```
+
 ### app.py decodes binary data back to jpeg format.
 
 ## Connect the VSI to Cloud Object storage
